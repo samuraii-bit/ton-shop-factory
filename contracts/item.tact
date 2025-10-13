@@ -24,11 +24,7 @@ contract Item with Ownable {
         self.itemName = itemName;
         self.itemId = itemId;
     }
-
-    receive(msg: Transfer) {
-        self.requireOwner();
-        self.owner = msg.newOwner;
-    }
+    
     // receive() {
     //     // Forward the remaining value in the
     //     // incoming message back to the sender

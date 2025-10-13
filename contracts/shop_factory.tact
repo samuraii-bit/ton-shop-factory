@@ -33,7 +33,7 @@ contract ShopFactory with Ownable {
             code: init.code,
             data: init.data
         });
-
+    
         let reply: StringBuilder = beginString();
         reply.append("Shop #");
         reply.append(self.shopsCount.toString());

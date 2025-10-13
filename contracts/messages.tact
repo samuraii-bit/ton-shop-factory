@@ -5,7 +5,3 @@ message CreateShop {
 message AddItem {
     itemName: String;
 }
-
-message Transfer {
-    newOwner: Address;
-}
