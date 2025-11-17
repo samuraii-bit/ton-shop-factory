@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tact-lang/tact/main/src/config/configSchema.json",
+  "projects": [
+    {
+      "name": "ShopFactory",
+      "path": "contracts/shop_factory.tact",
+      "output": "build/ShopFactory",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "Shop",
+      "path": "contracts/shop.tact",
+      "output": "build/Shop",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "UniqueItem",
+      "path": "contracts/unique_item.tact",
+      "output": "build/UniqueItem",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "ProductLineItem",
+      "path": "contracts/product_line_item.tact",
+      "output": "build/ProductLineItem",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "Order",
+      "path": "contracts/order.tact",
+      "output": "build/Order",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    }
+  ]
+}

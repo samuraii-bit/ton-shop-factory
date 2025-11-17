@@ -1,0 +1,3 @@
+struct List {
+    head: Cell;
+}
