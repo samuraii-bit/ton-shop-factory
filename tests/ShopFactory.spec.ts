@@ -11,16 +11,16 @@ describe('ShopFactory', () => {
     beforeEach(async () => {
         blockchain = await Blockchain.create();
 
-        shopFactory = blockchain.openContract(await ShopFactory.fromInit());
-
         deployer = await blockchain.treasury('deployer');
+
+        shopFactory = blockchain.openContract(await ShopFactory.fromInit(deployer.address));
 
         const deployResult = await shopFactory.send(
             deployer.getSender(),
             {
                 value: toNano('0.05'),
             },
-            null,
+            null
         );
 
         expect(deployResult.transactions).toHaveTransaction({

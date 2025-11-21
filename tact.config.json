@@ -22,9 +22,29 @@
       "mode": "full"
     },
     {
-      "name": "Item",
-      "path": "contracts/item.tact",
-      "output": "build/Item",
+      "name": "UniqueItem",
+      "path": "contracts/unique_item.tact",
+      "output": "build/UniqueItem",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "ProductLineItem",
+      "path": "contracts/product_line_item.tact",
+      "output": "build/ProductLineItem",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "Order",
+      "path": "contracts/order.tact",
+      "output": "build/Order",
       "options": {
         "debug": false,
         "external": false
